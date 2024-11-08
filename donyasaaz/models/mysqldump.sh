@@ -1,0 +1,1 @@
+mysqldump -u root -pHolyDance2015 donyasaaz > ./static/dump.sql

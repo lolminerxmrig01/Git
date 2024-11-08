@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.g3g4x5x6</groupId>
+    <artifactId>nuclei-plus</artifactId>
+    <packaging>pom</packaging>
+    <version>7.4.8</version>
+    <modules>
+        <module>nuclei</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <fastjson-version>1.2.83</fastjson-version>
+
+        <flatlaf-version>2.0.1</flatlaf-version>
+        <flatlaf-extras-version>2.0.1</flatlaf-extras-version>
+        <flatlaf-intellij-themes-version>1.5</flatlaf-intellij-themes-version>
+
+        <rsyntaxtextarea-version>3.5.0</rsyntaxtextarea-version>
+        <rstaui-version>3.3.1</rstaui-version>
+        <autocomplete-version>3.3.1</autocomplete-version>
+
+        <jediterm-core-version>3.44-SNAPSHOT</jediterm-core-version>
+        <jediterm-ui-version>3.44-SNAPSHOT</jediterm-ui-version>
+        <kotlin-stdlib-version>2.0.0</kotlin-stdlib-version>
+
+        <slf4j-api-version>2.0.7</slf4j-api-version>
+        <slf4j-reload4j-version>2.0.9</slf4j-reload4j-version>
+
+        <poi-version>5.0.0</poi-version>
+        <jna-version>5.8.0</jna-version>
+        <qqwry-java-version>0.8.0</qqwry-java-version>
+
+        <pty4j-version>0.12.13</pty4j-version>
+        <annotations-version>RELEASE</annotations-version>
+
+        <snakeyaml-version>2.2</snakeyaml-version>
+        <commons-io-version>2.11.0</commons-io-version>
+
+        <junit-jupiter-version>RELEASE</junit-jupiter-version>
+
+        <jcolor-version>5.5.1</jcolor-version>
+        <hutool-version>5.8.25</hutool-version>
+
+        <lombok-version>1.18.24</lombok-version>
+
+        <feign-core-version>13.3</feign-core-version>
+
+        <xjar-version>4.0.2</xjar-version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-core</artifactId>
+                <version>${feign-core-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-jackson</artifactId>
+                <version>${feign-core-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-okhttp</artifactId>
+                <version>${feign-core-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/commons-io/cocodecmmons-io -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf -->
+            <dependency>
+                <groupId>com.formdev</groupId>
+                <artifactId>flatlaf</artifactId>
+                <version>${flatlaf-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-extras -->
+            <dependency>
+                <groupId>com.formdev</groupId>
+                <artifactId>flatlaf-extras</artifactId>
+                <version>${flatlaf-extras-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-intellij-themes -->
+            <dependency>
+                <groupId>com.formdev</groupId>
+                <artifactId>flatlaf-intellij-themes</artifactId>
+                <version>${flatlaf-intellij-themes-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.fifesoft/rsyntaxtextarea -->
+            <dependency>
+                <groupId>com.fifesoft</groupId>
+                <artifactId>rsyntaxtextarea</artifactId>
+                <version>${rsyntaxtextarea-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fifesoft</groupId>
+                <artifactId>rstaui</artifactId>
+                <version>${rstaui-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fifesoft</groupId>
+                <artifactId>autocomplete</artifactId>
+                <version>${autocomplete-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jediterm</groupId>
+                <artifactId>jediterm-core</artifactId>
+                <version>${jediterm-core-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jediterm</groupId>
+                <artifactId>jediterm-ui</artifactId>
+                <version>${jediterm-ui-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib</artifactId>
+                <version>${kotlin-stdlib-version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-common -->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-common</artifactId>
+                <version>${kotlin-stdlib-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-reload4j</artifactId>
+                <version>${slf4j-reload4j-version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+            <dependency>
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna</artifactId>
+                <version>${jna-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.jarod</groupId>
+                <artifactId>qqwry-java</artifactId>
+                <version>${qqwry-java-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.pty4j</groupId>
+                <artifactId>pty4j</artifactId>
+                <version>${pty4j-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${annotations-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit-jupiter-version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.diogonunes/JColor -->
+            <dependency>
+                <groupId>com.diogonunes</groupId>
+                <artifactId>JColor</artifactId>
+                <version>${jcolor-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <!-- 设置 jitpack.io 仓库 -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>jetbrains-intellij-dependencies</id>
+            <url>https://packages.jetbrains.team/maven/p/ij/intellij-dependencies</url>
+        </repository>
+    </repositories>
+
+    <scm>
+        <connection>scm:svn:http://127.0.0.1/g3g4x5x6</connection>
+        <developerConnection>scm:svn:https://127.0.0.1/g3g4x5x6</developerConnection>
+        <tag>HEAD</tag>
+        <url>http://127.0.0.1/g3g4x5x6</url>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                    implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <manifestEntries>
+                                        <Main-Class>com.g3g4x5x6.NucleiApp</Main-Class>
+                                        <SplashScreen-Image>splashscreen/splashscreen.png</SplashScreen-Image>
+                                        <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                                        <Can-Redefine-Classes>true</Can-Redefine-Classes>
+                                    </manifestEntries>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+</project>

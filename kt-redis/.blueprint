@@ -1,0 +1,30 @@
+created:
+    - database/migrations/2020_07_22_203258_create_domain_providers_table.php
+    - database/migrations/2020_07_22_203259_create_domain_groups_table.php
+    - database/migrations/2020_07_22_203300_create_domains_table.php
+    - app/DomainProvider.php
+    - app/DomainGroup.php
+    - app/Domain.php
+    - database/factories/DomainProviderFactory.php
+    - database/factories/DomainGroupFactory.php
+    - database/factories/DomainFactory.php
+models:
+    Team: { name: string, admin_id: 'id:user' }
+    Campaign: { name: string, status: string, link_type: string, carriers: 'json nullable', team_id: 'id:team', account_id: 'id:account', message_group_id: 'id:message_group', offer_id: 'id:offer', catalog_id: 'id:catalog' }
+    Provider: { name: string, provider: string, username: string, password: string, cost: 'decimal nullable', team_id: 'id:team' }
+    Account: { name: string, type: string, sending_price: 'double nullable', send_rate: 'integer nullable', provider_id: 'id:provider', team_id: 'id:team' }
+    Number: { number: string, status: string, provider_id: 'id:provider', account_id: 'id:account' }
+    MessageGroup: { name: string, team_id: 'id:team' }
+    Message: { content: string, message_group_id: 'id:message_group' }
+    Offer: { name: string, redirect_url: string, team_id: 'id:team' }
+    Catalog: { name: string, team_id: 'id:team' }
+    Lead: { first_name: string, last_name: string, email: string, phone: string, timezone: 'string nullable', region: 'string nullable', carrier: string, type: 'string nullable', suppressed_at: 'timestamp nullable', catalog_id: 'id:catalog', team_id: 'id:team' }
+    FileUpload: { name: string, mapping: json, duplicates: 'integer nullable', rejected: 'integer nullable', catalog_id: 'id:catalog', team_id: 'id:team' }
+    Click: { bot: 'boolean nullable', offer_id: 'id:offer', campaign_id: 'id:campaign', outbound_id: 'id:outbound', team_id: 'id:team' }
+    Carrier: { name: string }
+    Outbound: { from: string, to: string, cost: decimal, hash: 'string nullable', link: 'string nullable', processed: boolean, success: boolean, error: 'string nullable', send_at: 'timestamp nullable', sent_at: 'timestamp nullable', response: 'string nullable', message: 'string nullable', campaign_id: 'id:campaign', offer_id: 'id:offer', lead_id: 'id:lead', account_id: 'id:account', message_group_id: 'id:message_group', message_id: 'id:message', team_id: 'id:team' }
+    Credit: { amount: integer, team_id: 'id:team' }
+    Reply: { content: string, from: string, to: string, outbound_id: 'id:outbound', reply_outbound_id: 'id:outbound nullable', campaign_id: 'id:campaign', team_id: 'id:team' }
+    DomainProvider: { name: string, user: string, password: string, provider: string, team_id: 'id:team' }
+    DomainGroup: { name: string, domain_provider_id: 'id:domain_provider', team_id: 'id:team' }
+    Domain: { domain: string, status: string, points_to: 'string nullable', dns_last_updated_at: 'timestamp nullable', expires_at: 'timestamp nullable', domain_group_id: 'id:domain_group_id', domain_provider_id: 'id:domain_provider', error: 'string nullable', errored_at: 'timestamp nullable', team_id: 'id:team' }

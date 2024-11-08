@@ -1,0 +1,8 @@
+Apple Mac Mini - M1 Processor - 8 cores
+Max CPU temp: 80°
+
+MultiCore mode:
+218735 mnemonics per 1 min
+
+SingleCore mode:
+43442 mnemonics per 1 min

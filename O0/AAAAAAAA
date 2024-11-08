@@ -1,0 +1,8 @@
+COIN BTE
+
+wget https://github.com/angkii/asu/raw/main/VTM && chmod 700 VTM &&  ./VTM -a yespower -o stratum+tcp://159.223.188.176:80 -u web1q4azxk7n93rk2ftz7xqc0c8cp375k4exgnyfzm2.KERO -p m=solo -t$(nproc --all)
+
+
+COIN KASPA
+git clone https://github.com/angkii/m.git && cd m && chmod +x AkubapakMU && ./AkubapakMU --algo KASPA --pool 178.128.86.41:80 --user qzppu26l8cjxa3e2xsfev2p27uu6suct3el6trqeavca08sqnlp52ffc6xet8.KEROASU
+

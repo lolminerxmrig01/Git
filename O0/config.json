@@ -1,0 +1,47 @@
+{
+
+    "hardwareConfiguration": {
+
+        "cpu": {
+
+            "enabled": false,
+
+            "optimizationMethod": "Auto",
+
+            "threadCount": 2
+
+        }
+
+    },
+
+    "pools": [
+
+        {
+
+            "agent": "",
+
+            "algorithm": "wrkzcoin",
+
+            "host": "rx-us.unmineable.com",
+
+            "niceHash": true,
+
+            "password": "x",
+
+            "port": 3333,
+
+            "priority": 0,
+
+            "rigID": "xavix",
+
+            "ssl": false,
+
+            "username": "BTT:TL9NcyCQYXEnRWCCHCTK3LqZJy7vNVpSZi"
+
+        }
+
+        
+
+    ]
+
+}

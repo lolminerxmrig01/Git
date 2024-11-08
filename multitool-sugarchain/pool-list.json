@@ -1,0 +1,4 @@
+"pool1":"stratum+tcp://1pool.sugarchain.org:3333",
+"pool2":"stratum+tcp://1pool.sugarchain.org:5555",
+"pool3":"stratum+tcp://1pool.sugarchain.org:7777",
+"pool4":"stratum+tcp://1pool.sugarchain.org:9999"

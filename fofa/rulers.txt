@@ -1,0 +1,52 @@
+body="fileId = 485733195602",10
+body="fileId = 485737359171",10
+body="ownerId = 484387821692",10
+body="ownerId = 484398248483",10
+body="saved from url=(0047)https",10
+body="mimg.127.net/p/images/favicon.ico",10
+body="mail.qq.com/favicon.ico",10
+fid="G6XS9/fV1xXt51WgFSVkzA==",10
+fid="AuJ/iGa9cB5Ft1aB9Bx8AQ==",10
+fid="nLedPTLi/mBR+p+TnvF4pw==",10
+title="网易网盘",10
+title="中转站",10
+body="coremail" && country!="CN",20
+body="邮件系统" && country!="CN",20
+body="企业邮件" && country!="CN",10
+title="大学" && body="邮件" && country!="CN",50
+title="大学" && body="登录" && country!="CN",50
+title="大学" && body="邮箱" && country!="CN",20
+title="国防" && country!="CN",10
+title="核能" && country!="CN",10
+title="兵器" && country!="CN",10
+title="协会" && country!="CN",20
+title="学会" && country!="CN" && title!="日本" && title!="聖教",50
+title="中核" && country!="CN",10
+title="中航" && country!="CN",10
+title="航空" && country!="CN",50
+title="政府" && country!="CN",10
+title="委员会" && country!="CN",10
+title="工业集团" && country!="CN",10
+title="中华人民共和国" && country!="CN",10
+title="研究院" && country!="CN" && title!="草",30
+server="Apache" && body="saved from" && body="ICP备" && country!="CN",10
+server="Apache" && title="中国" && country!="CN" && title!="价格" && title!="门户" && title!="日本",50
+server="nginx" && title="邮件" && country!="CN",20
+server="nginx" && title="中国" && body="ICP备" && country!="CN" && title!="赌" && title!="猜" && title!="买" && title!="体育" && title!="赛" && title!="澳门" && title!="彩" && title!="开户",30
+body="邮箱" && asn="63949" && title!="Webmail 登录" && title!=" Sentry",50
+body="企业邮箱" && country!="CN",100
+body="邮件登录" && country!="CN",20
+body="国防" && body="ICP备" && body="登录" && country!="CN" && title!="赌" && title!="猜" && title!="买" && title!="体育" && title!="赛" && title!="澳门" && title!="彩" && title!="开户",20
+body="国防" && body="ICP备" && body="邮件" && country!="CN" && title!="赌" && title!="猜" && title!="买" && title!="体育" && title!="赛" && title!="澳门" && title!="彩" && title!="开户" && title!="APP",20
+body="中核" && body="登录" && country!="CN" && title!="赌" && title!="猜" && title!="买" && title!="体育" && title!="赛" && title!="澳门" && title!="彩" && title!="开户" && title!="APP",20
+body="中央" && body="ICP备" && body="登录" && country!="CN" && title!="体育" && title!="app" && title!="直播" && title!="买" && title!="注" && title!="赌" && title!="赛" && title!="亚博" && title!="下载" && title!="棋牌",50
+body="核能" && country!="CN" && title!="体育" && title!="app" && title!="直播" && title!="买" && title!="注" && title!="赌" && title!="赛" && title!="亚博" && title!="下载" && title!="棋牌",50
+body="兵器" && body="ICP备" && country!="CN" && title!="神途" && title!="德赢" && title!="在线" && title!="直播" && title!="app" && title!="娱乐",10
+body="中航" && country!="CN" && body="ICP备" && title!="娱乐",20
+body="邮件" && asn="63949" && title!="Webmail 登录",150
+body="ICP备" && asn="63949" && title!="搜索" && title!="微信" && title!="体育" && title!="创意",20
+body="ICP备" && asn="20473" && title!="免费" && title!="分享" && title!="个人",50
+body="ICP备" && asn="14061" && title!="搜索" && title!="微信" && title!="体育" && title!="创意",20
+title="邮件" && country!="CN",50
+title="国家" && country!="CN",100
+title="中央" && country!="CN" && title!="会社" && title!="酒店" && title!="幼稚園" && title!="病院" && title!="歯科",100

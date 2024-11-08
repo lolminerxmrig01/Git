@@ -1,0 +1,10 @@
+bip32utils
+certifi
+chainside-btcpy-multi
+chardet
+ecdsa
+idna
+mnemonic
+requests
+six
+urllib3

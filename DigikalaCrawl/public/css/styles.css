@@ -1,0 +1,44 @@
+.row {
+    font-family: Vazir;
+    margin-top: 10%;
+    margin-top: 5%;
+    border: 1px solid #ccccccb8;
+    padding: 30px;
+}
+
+.title {
+    font-size: 20px;
+
+    direction: rtl;
+}
+
+.seller {
+    direction: rtl;
+    background-color: #f5f5f5;
+    min-height: 206px;
+}
+
+.seller h6 {
+    padding: 30px;
+}
+
+.seller h4 {
+    float: left;
+}
+
+.index {
+    direction: rtl;
+}
+
+.index label {
+    margin-bottom: 15px;
+}
+
+.index input {
+    margin-bottom: 10px;
+}
+
+.index button {
+    margin-top: 20px;
+    float: left;
+}

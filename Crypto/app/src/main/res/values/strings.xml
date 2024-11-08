@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SampleMatiran</string>
+    <string name="please_wait">please wait</string>
+    <string name="action_failed">action failed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rank">Rank</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="volume_24h">Volume 24h</string>
+    <string name="percent_change_in">Percent change in</string>
+    <string name="loading">loading...</string>
+</resources>

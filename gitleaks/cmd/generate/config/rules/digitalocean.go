@@ -1,0 +1,50 @@
+package rules
+
+import (
+	"github.com/zricethezav/gitleaks/v8/cmd/generate/secrets"
+	"github.com/zricethezav/gitleaks/v8/config"
+)
+
+func DigitalOceanPAT() *config.Rule {
+	r := config.Rule{
+		Description: "DigitalOcean Personal Access Token",
+		RuleID:      "digitalocean-pat",
+		Regex:       generateUniqueTokenRegex(`dop_v1_[a-f0-9]{64}`, true),
+		Keywords:    []string{"dop_v1_"},
+	}
+
+	tps := []string{
+		generateSampleSecret("do", "dop_v1_"+secrets.NewSecret(hex("64"))),
+	}
+	return validate(r, tps, nil)
+}
+
+func DigitalOceanOAuthToken() *config.Rule {
+	r := config.Rule{
+		Description: "DigitalOcean OAuth Access Token",
+		RuleID:      "digitalocean-access-token",
+
+		Regex:    generateUniqueTokenRegex(`doo_v1_[a-f0-9]{64}`, true),
+		Keywords: []string{"doo_v1_"},
+	}
+
+	tps := []string{
+		generateSampleSecret("do", "doo_v1_"+secrets.NewSecret(hex("64"))),
+	}
+	return validate(r, tps, nil)
+}
+
+func DigitalOceanRefreshToken() *config.Rule {
+	r := config.Rule{
+		Description: "DigitalOcean OAuth Refresh Token",
+		RuleID:      "digitalocean-refresh-token",
+
+		Regex:    generateUniqueTokenRegex(`dor_v1_[a-f0-9]{64}`, true),
+		Keywords: []string{"dor_v1_"},
+	}
+
+	tps := []string{
+		generateSampleSecret("do", "dor_v1_"+secrets.NewSecret(hex("64"))),
+	}
+	return validate(r, tps, nil)
+}

@@ -1,0 +1,6 @@
+venv/
+httpx
+subfinder
+nuclei
+notify
+*.txt

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.sample.matiran.model.Crypto" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                tools:context="com.sample.matiran.MainActivity">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{item.name}"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_mooney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{item.priceUsd}"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_name"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_name"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_name" />
+
+                <View
+                    android:id="@+id/divider_one"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_mooney" />
+
+                <TextView
+                    android:id="@+id/text_view_rank_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/rank"
+                    android:textColor="@color/app_text"
+                    app:layout_constraintStart_toStartOf="@+id/divider_one"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_one" />
+
+                <TextView
+                    android:id="@+id/text_view_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item._rank}"
+                    android:textColor="@color/app_text_muted"
+                    app:layout_constraintEnd_toEndOf="@+id/divider_one"
+                    app:layout_constraintTop_toTopOf="@+id/text_view_rank_lable" />
+
+                <View
+                    android:id="@+id/divider_two"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_rank" />
+
+                <TextView
+                    android:id="@+id/text_view_market_cup_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/market_cap"
+                    android:textColor="@color/app_text"
+                    app:layout_constraintStart_toStartOf="@+id/divider_two"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_two" />
+
+                <TextView
+                    android:id="@+id/text_view_market_cup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.marketCapUsd}"
+                    android:textColor="@color/app_text_muted"
+                    app:layout_constraintEnd_toEndOf="@+id/divider_two"
+                    app:layout_constraintTop_toTopOf="@+id/text_view_market_cup_lable" />
+
+                <View
+                    android:id="@+id/divider_three"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_market_cup" />
+
+                <TextView
+                    android:id="@+id/text_view_volume_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/volume_24h"
+                    android:textColor="@color/app_text"
+                    app:layout_constraintStart_toStartOf="@+id/divider_three"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_three" />
+
+                <TextView
+                    android:id="@+id/text_view_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.volume24}"
+                    android:textColor="@color/app_text_muted"
+                    app:layout_constraintEnd_toEndOf="@+id/divider_three"
+                    app:layout_constraintTop_toTopOf="@+id/text_view_volume_lable" />
+
+                <View
+                    android:id="@+id/divider_four"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_volume" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/root_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/divider_four"
+                    app:layout_constraintStart_toStartOf="@+id/divider_four"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_four">
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/percent_change_in"
+                        android:textColor="@color/app_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/image_view_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/percent_change_in"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_view_percent_change"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/text_view_percent_change"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/percent_change_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/divider_four"
+                    app:layout_constraintStart_toStartOf="@+id/divider_four"
+                    app:layout_constraintTop_toBottomOf="@+id/root_more">
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change_1h_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1h"
+                        android:textColor="@color/app_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change_1h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{item.percentChange1h}"
+                        android:textColor="@{item.getTextColor(context,item.percentChange1h)}"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_view_percent_change_1h_label"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change_7h_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="7h"
+                        android:textColor="@color/app_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_view_percent_change_1h_label" />
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change_7h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{item.percentChange7d}"
+                        android:textColor="@{item.getTextColor(context,item.percentChange7d)}"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_view_percent_change_7h_label"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/text_view_percent_change_7h_label" />
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change_24h_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="24h"
+                        android:textColor="@color/app_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_view_percent_change_7h_label" />
+
+                    <TextView
+                        android:id="@+id/text_view_percent_change_24h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{item.percentChange24h}"
+                        android:textColor="@{item.getTextColor(context,item.percentChange24h)}"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_view_percent_change_24h_label"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/text_view_percent_change_24h_label" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</layout>

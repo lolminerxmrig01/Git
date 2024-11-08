@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="72" viewBox="0 0 111 72">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#57CFB1" stroke-linecap="round" stroke-linejoin="round" d="M70 45h23M70 50h11.5M93 32v3a5 5 0 0 1-5 5H75a5 5 0 0 1-5-5V22a5 5 0 0 1 5-5h8"/>
+        <path stroke="#9199A0" stroke-linecap="round" stroke-linejoin="round" d="M91 21l9-9"/>
+        <circle cx="99" cy="20" r="2" stroke="#9199A0" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="92" cy="13" r="2" stroke="#9199A0" stroke-linecap="round" stroke-linejoin="round"/>
+        <path stroke="#9199A0" stroke-linecap="round" stroke-linejoin="round" d="M70.5 55v6.5a4 4 0 0 1-4 4h-52a4 4 0 0 1-4-4v-51a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4V13M10.5 23.5h55"/>
+        <rect width="4" height="4" x="14.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="14.5" y="34.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="22.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="30.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="38.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="46.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="54.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="54.5" y="34.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="62.5" y="27.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="62.5" y="34.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="14.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="22.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="30.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="38.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="46.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="54.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="62.5" y="41.5" stroke="#9199A0" rx="2"/>
+        <rect width="20" height="4" x="14.5" y="48.5" stroke="#F9A825" stroke-linecap="round" stroke-linejoin="round" rx="1.5"/>
+        <rect width="28" height="4" x="22.5" y="34.5" stroke="#4FCCE9" stroke-linecap="round" stroke-linejoin="round" rx="1.5"/>
+        <rect width="4" height="4" x="38.5" y="48.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="46.5" y="48.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="54.5" y="48.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="62.5" y="48.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="14.5" y="55.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="22.5" y="55.5" stroke="#9199A0" rx="2"/>
+        <rect width="4" height="4" x="30.5" y="55.5" stroke="#9199A0" rx="2"/>
+        <path stroke="#9199A0" stroke-linecap="round" stroke-linejoin="round" d="M15 15h25"/>
+        <path stroke="#57CFB1" stroke-linecap="round" stroke-linejoin="round" d="M88.92 23.184l-10.49 10.51-4.51-4.51"/>
+    </g>
+</svg>
